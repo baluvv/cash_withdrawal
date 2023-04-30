@@ -5,8 +5,8 @@ const DenominationItem = props => {
 
   const {value} = denominationDetails
 
-  const onWithdraw = event => {
-    onWithdrawal(event)
+  const onWithdraw = () => {
+    onWithdrawal(value)
   }
 
   return (

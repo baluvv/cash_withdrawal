@@ -7,9 +7,9 @@ import './index.css'
 class CashWithdrawal extends Component {
   state = {currentAmount: 2000}
 
-  onWithdrawal = event => {
+  onWithdrawal = value => {
     this.setState(prevState => ({
-      currentAmount: prevState.currentAmount - parseInt(event.target.innerText),
+      currentAmount: prevState.currentAmount - value,
     }))
   }
 
